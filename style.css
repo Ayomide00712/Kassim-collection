@@ -80,7 +80,8 @@ body {
 .back h1{
 display: flex;
   justify-content: center;
-  font-size: 25vw;
+  margin-left: 30px;
+  font-size: 15vw;
   font-weight: 900;
   background-position: center;
   background-image: url(image/market.jpg);
@@ -88,9 +89,11 @@ display: flex;
   --webkit-background-clip:text;
   color: transparent;
   background-size: cover;
-  line-height: 1.5;
+  
 }
 .sec-1{
+  width: 70%;
+  margin: auto;
   height: 70vh;
   display: flex;
   justify-content: center;
@@ -103,11 +106,47 @@ display: flex;
   font-size: 5vw;
   font-family: "Lora", serif;
   word-spacing: 5px;
+  text-transform: uppercase;
 }
 .sec-1 h2:hover{
   color: rgba(0, 0, 0, 0.3);
 }
-
+.sec-2{ 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 70%;
+  margin: auto;
+}
+ #collapse{
+  /* display: grid;
+ grid-template-columns: 1fr 1fr ; */
+  
+}
+.main-img{
+ 
+  width: 250px;
+  height: 400px;
+}
+.image img{
+  
+ width: 250px;
+ height: 300px;
+ object-fit: cover;
+ border-radius: 20px;
+}
+.info{
+ 
+  display: flex;
+  justify-content: space-between;
+}
+.info-name{
+  font-size: 22px;
+}
+.info-name .type{
+  font-family: "Lora", serif;
+  color: black;
+  font-weight: 700;
+}
 @media (max-width: 600px) {
   .container {
     width: 100%;
@@ -133,6 +172,23 @@ display: flex;
     justify-content: center;
   }
   .sec-1{
-    height: 20vh;
+    height: 50vh;
   }
+  .sec-2{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    width: 90%;
+    margin: auto;
+  }
+  .main-img{
+    width: 50%;
+    height: 50vh;
+  }
+  .image img{
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+   }
+  
 }

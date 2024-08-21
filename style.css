@@ -91,6 +91,10 @@ display: flex;
   background-size: cover;
   
 }
+.sec-1-a{
+  text-decoration: none;
+  color: black;
+}
 .sec-1{
   width: 70%;
   margin: auto;
@@ -181,7 +185,7 @@ display: flex;
     margin: auto;
   }
   .main-img{
-    width: 50%;
+    width: 80%;
     height: 50vh;
   }
   .image img{

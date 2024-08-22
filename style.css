@@ -152,10 +152,63 @@ body {
   font-weight: 700;
 }
 /******************* footer section ********************** */
-.footer{
+footer{
   background-color: red;
-  height: 30vh;
+  height: 60vh;
   margin-top: 20px;
+  
+}
+.footer{
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.end{
+  margin:5px;
+  display: inline-block;
+  background-color: blue;
+}
+.end span p{
+  font-size: 25px;
+  color: white;
+}
+.center p{
+  text-align: center;
+ 
+}
+.vertical{
+  writing-mode: vertical-lr;
+  margin-left: 3px;
+}
+.middle{
+  /* position: relative;
+  left: 50px;
+  top: 20px; */
+  /* background-color: aqua; */
+  width: 80px;
+  margin: 25px;
+  padding-left: 20px;
+}
+.middle p{
+  font-weight: 800;
+  font-size: 26px;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  margin: 25px 70px;
+}
+ .span-list{
+  margin-bottom: 10px;
+}
+.span-list a{
+  text-decoration: none;
+  color: black;
+}
+.span-list a:hover{
+  text-decoration: underline;
+  text-decoration-color: black;
+  color: black;
 }
 @media (max-width: 600px) {
   .container {

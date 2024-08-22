@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
 * {
   margin: 0;
@@ -21,12 +21,10 @@ body {
   display: flex;
   justify-content: space-evenly;
   /* position: static; */
-  
 }
 .left-side {
   display: flex;
   margin: 25px;
- 
 }
 .logo {
   margin: 7px;
@@ -48,37 +46,34 @@ body {
 }
 
 .center {
-    
-    margin-top: 30px;
-    margin-right: 50px; 
-    
+  margin-top: 30px;
+  margin-right: 50px;
 }
 .right-side {
-    display: flex;
+  display: flex;
 }
-.right-logo{
-    margin-left: 10px;
-    margin-top: 30px;
+.right-logo {
+  margin-left: 10px;
+  margin-top: 30px;
 }
-#user{
-    font-size: 26px;
-    margin-left: 5px;
-}
-
-.right-logo .right-p{
-    border:2px solid black;
-    border-radius: 10px;
-    padding: 5px 10px;
-}
-.right-logo .right-p:hover{
-
-    color: white;
-    background-color: black;
-    transition: 0.5s ease-in-out;
+#user {
+  font-size: 26px;
+  margin-left: 5px;
 }
 
-.back h1{
-display: flex;
+.right-logo .right-p {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.right-logo .right-p:hover {
+  color: white;
+  background-color: black;
+  transition: 0.5s ease-in-out;
+}
+
+.back h1 {
+  display: flex;
   justify-content: center;
   margin-left: 30px;
   font-size: 15vw;
@@ -86,16 +81,15 @@ display: flex;
   background-position: center;
   background-image: url(image/market.jpg);
   background-clip: text;
-  --webkit-background-clip:text;
+  --webkit-background-clip: text;
   color: transparent;
   background-size: cover;
-  
 }
-.sec-1-a{
+.sec-1-a {
   text-decoration: none;
   color: black;
 }
-.sec-1{
+.sec-1 {
   width: 70%;
   margin: auto;
   height: 70vh;
@@ -103,7 +97,7 @@ display: flex;
   justify-content: center;
   align-items: center;
 }
-.sec-1 h2{
+.sec-1 h2 {
   font-weight: 700;
   text-align: center;
   letter-spacing: 5px;
@@ -112,44 +106,56 @@ display: flex;
   word-spacing: 5px;
   text-transform: uppercase;
 }
-.sec-1 h2:hover{
+.sec-1 h2:hover {
   color: rgba(0, 0, 0, 0.3);
 }
-.sec-2{ 
+.sec-2 {
+  border: 1px solid red;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 30px;
+  grid-template-columns: auto auto auto auto;
   width: 70%;
   margin: auto;
 }
- #collapse{
-  /* display: grid;
- grid-template-columns: 1fr 1fr ; */
-  
+
+.grid-class {
+  border: 1px solid red;
+  margin: auto;
+
+  /* Adjust grid track size to accommodate two columns */
+  /* grid-template-rows: repeat(2, 1fr); */
 }
-.main-img{
- 
+.main-img {
   width: 250px;
   height: 400px;
 }
-.image img{
-  
- width: 250px;
- height: 300px;
- object-fit: cover;
- border-radius: 20px;
+.image img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
 }
-.info{
- 
+
+.image1 img:hover {
+  background-color: black;
+}
+.info {
   display: flex;
   justify-content: space-between;
 }
-.info-name{
+.info-name {
   font-size: 22px;
 }
-.info-name .type{
+.info-name .type {
   font-family: "Lora", serif;
   color: black;
   font-weight: 700;
+}
+/******************* footer section ********************** */
+.footer{
+  background-color: red;
+  height: 30vh;
+  margin-top: 20px;
 }
 @media (max-width: 600px) {
   .container {
@@ -158,7 +164,6 @@ display: flex;
   }
   .head {
     flex-direction: column;
-    ;
   }
   .left-side {
     max-width: 80%;
@@ -166,33 +171,32 @@ display: flex;
     display: flex;
     justify-content: space-evenly;
   }
-  .center{
+  .center {
     /* width: 80%; */
     margin-top: 5px;
     margin: auto;
   }
-  .right-side{
+  .right-side {
     display: flex;
     justify-content: center;
   }
-  .sec-1{
+  .sec-1 {
     height: 50vh;
   }
-  .sec-2{ 
+  .sec-2 {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     width: 90%;
     margin: auto;
   }
-  .main-img{
+  .main-img {
     width: 80%;
     height: 50vh;
   }
-  .image img{
+  .image img {
     width: 150px;
     height: 200px;
     object-fit: cover;
     border-radius: 20px;
-   }
-  
+  }
 }

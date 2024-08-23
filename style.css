@@ -110,7 +110,6 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 .sec-2 {
-  border: 1px solid red;
   display: grid;
   row-gap: 30px;
   grid-template-columns: auto auto auto auto;
@@ -119,11 +118,7 @@ body {
 }
 
 .grid-class {
-  border: 1px solid red;
   margin: auto;
-
-  /* Adjust grid track size to accommodate two columns */
-  /* grid-template-rows: repeat(2, 1fr); */
 }
 .main-img {
   width: 250px;
@@ -152,63 +147,109 @@ body {
   font-weight: 700;
 }
 /******************* footer section ********************** */
-footer{
-  background-color: red;
-  height: 60vh;
+
+.main-footer {
+  background-color: hsla(14, 87%, 52%, 1);
+  height: 100%;
   margin-top: 20px;
-  
+  font-family: "Times New Roman", Times, serif;
+  width: 100%;
 }
-.footer{
+.footer {
   width: 80%;
   margin: auto;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.end{
-  margin:5px;
+.end {
+  margin: 50px;
   display: inline-block;
-  background-color: blue;
+  /* background-color: rgb(81, 132, 164); */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
-.end span p{
-  font-size: 25px;
+.end span p {
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 500;
   color: white;
 }
-.center p{
+.center p {
   text-align: center;
- 
 }
-.vertical{
+.vertical p{
   writing-mode: vertical-lr;
-  margin-left: 3px;
+  text-align: center;
 }
-.middle{
-  /* position: relative;
-  left: 50px;
-  top: 20px; */
-  /* background-color: aqua; */
+.middle {
   width: 80px;
   margin: 25px;
   padding-left: 20px;
 }
-.middle p{
+.middle p {
   font-weight: 800;
   font-size: 26px;
 }
-.list{
+.list {
   display: flex;
   flex-direction: column;
   margin: 25px 70px;
 }
- .span-list{
+.span-list {
   margin-bottom: 10px;
 }
-.span-list a{
+.span-list a {
   text-decoration: none;
   color: black;
 }
-.span-list a:hover{
+.span-list a:hover {
   text-decoration: underline;
   text-decoration-color: black;
   color: black;
+}
+.social {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-foot {
+  font-size: 26px;
+}
+.social-foot a {
+  color: black;
+  font-weight: 800;
+  padding: 10px;
+}
+.social-foot .fa-whatsapp {
+  color: green;
+  padding: 3px;
+}
+.social-foot .fa-x-twitter {
+  color: black;
+  padding: 3px;
+}
+.social-foot .fa-facebook {
+  color: blue;
+  padding: 3px;
+}
+.social-foot .fa-instagram {
+  color: rebeccapurple;
+  padding: 3px;
+}
+.moving-text {
+  margin-top: 40px;
+}
+.moving {
+  font-size: 25px;
+  font-weight: 900;
+}
+.moving .fa-circle {
+  color: #fff;
+}
+.moving .fa-forward {
+  color: #fff;
 }
 @media (max-width: 600px) {
   .container {
@@ -252,4 +293,70 @@ footer{
     object-fit: cover;
     border-radius: 20px;
   }
+  .main-footer{
+    height: 90vh;
+    width: 100%;
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    display: inline-block;
+  }
+  .end{
+    margin: auto;
+
+  }
+  .end span p{
+    text-align: center;
+  }
+  .vertical p{
+    writing-mode: vertical-lr;
+    text-align: center;
+    margin-left: 5px;
+  }
+  .middle{
+    width: 30px;
+    margin: 10px;
+    padding: 0;
+  }
+  .middle p{
+    font-size: 20;
+  }
+  .list{
+    margin: 15px 30px;
+  }
+  .span-list{
+    font-size: 20px;
+  }
+  .social{
+    width:95%;
+    display: inline-block;
+    margin-left: 30px;
+  }
+  .social-foot{
+    font-size: 18px;
+  }
+  .social-foot a {
+    color: black;
+    font-weight: 700;
+    padding: 6px;
+  }
+  .social-foot .fa-whatsapp {
+    color: green;
+    padding: 1.5px;
+  }
+  .social-foot .fa-x-twitter {
+    color: black;
+    padding: 1.5px;
+  }
+  .social-foot .fa-facebook {
+    color:blue;
+    padding:1.5px;
+  }
+  .social-foot .fa-instagram {
+    color: rebeccapurple;
+    padding: 1.5px;
+  }
+  
 }
